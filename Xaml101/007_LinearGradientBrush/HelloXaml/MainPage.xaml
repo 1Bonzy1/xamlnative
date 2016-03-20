@@ -1,0 +1,118 @@
+﻿<Page
+    x:Class="HelloXaml.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloXaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        <!-- 
+            Multiple variations in this sample, comment out the final step and uncomment 
+            another step to see the results 
+        -->
+        
+        <!-- Step 1 -->
+        <!--
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Offset="0" Color="Red"/>
+                        <GradientStop Offset="1" Color="Blue"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+            </Grid>
+        -->
+
+        <!-- Step 2 -->
+        <!--
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint=".5,0" EndPoint=".5,1">
+                        <GradientStop Offset="0" Color="Red"/>
+                        <GradientStop Offset="1" Color="Blue"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+            </Grid>
+        -->
+
+        <!-- Step 3 -->
+        <!--
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,.5" EndPoint="1,.5">
+                        <GradientStop Offset="0" Color="Red"/>
+                        <GradientStop Offset="1" Color="Blue"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+            </Grid>
+        -->
+
+        <!-- Step 4 -->
+        <!--
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,.5" EndPoint="1,.5">
+                        <GradientStop Offset="0" Color="Red"/>
+                        <GradientStop Offset=".5" Color="Yellow"/>
+                        <GradientStop Offset="1" Color="Blue"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+            </Grid>
+        -->
+
+        <!-- Step 5 -->
+        <!--
+            <Grid>
+                <Grid.Background>
+                     <LinearGradientBrush StartPoint="0,.5" EndPoint="1,.5">
+                         <GradientStop Offset="0" Color="Orange"/>
+                         <GradientStop Offset=".5" Color="Red"/>
+                         <GradientStop Offset=".5" Color="Yellow"/>
+                         <GradientStop Offset="1" Color="Blue"/>
+                     </LinearGradientBrush>
+                 </Grid.Background>
+            </Grid>
+        -->
+
+        <!-- Step 6 -->
+        <!--
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,.5" EndPoint=".5,.5">
+                        <GradientStop Offset="0" Color="Orange"/>
+                        <GradientStop Offset=".5" Color="Red"/>
+                        <GradientStop Offset=".5" Color="Yellow"/>
+                        <GradientStop Offset="1" Color="Blue"/>
+                    </LinearGradientBrush>
+                 </Grid.Background>
+            </Grid>
+        -->
+
+        <!-- Step 7 -->
+        <!--
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0,.5" EndPoint=".5,.5" SpreadMethod="Reflect">
+                        <GradientStop Offset="0" Color="Orange"/>
+                        <GradientStop Offset=".5" Color="Red"/>
+                        <GradientStop Offset=".5" Color="Yellow"/>
+                        <GradientStop Offset="1" Color="Blue"/>
+                    </LinearGradientBrush>
+                 </Grid.Background>
+            </Grid>
+        -->
+
+        <!-- Step 8 -->
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,.5" EndPoint=".5,.5" SpreadMethod="Repeat">
+                    <GradientStop Offset="0" Color="Orange"/>
+                    <GradientStop Offset=".5" Color="Red"/>
+                    <GradientStop Offset=".5" Color="Yellow"/>
+                    <GradientStop Offset="1" Color="Blue"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+    </Grid>
+</Page>
