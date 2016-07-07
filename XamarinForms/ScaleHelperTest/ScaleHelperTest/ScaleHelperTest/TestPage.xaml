@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScaleHelperTest.TestPage"
+  xmlns:s="clr-namespace:ScaleHelperTest;assembly=ScaleHelperTest">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="labelStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="s:ScaleHelper.TabletFontSize" Value="50"/>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout>
+    <Label Text="Normal, no attached properties, no style"/>
+    <Label Text="TabletFontSize attached property on the Label" s:ScaleHelper.TabletFontSize="50"/>
+    <Label Text="TabletStyle Attached Property" s:ScaleHelper.TabletStyle="{StaticResource labelStyle}"/>
+    <Label Text="TabletFontSize in a style (phone will get FontSize 20)" Style="{StaticResource labelStyle}"/>
+  </StackLayout>
+</ContentPage>
